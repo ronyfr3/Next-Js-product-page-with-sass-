@@ -1,0 +1,33 @@
+.main_wrapper {
+  @include flexContent(column);
+}
+.pro_wrapper {
+  @include flexContent(row);
+  margin: 30px;
+}
+.pro_details {
+  margin: 20px;
+  width: 200px;
+  height: 100%;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: rgb(98, 145, 145);
+  a {
+    background-color: red;
+    padding: 5px;
+    border-radius: 3px;
+    margin-left: 10px;
+    font-size: 12px;
+    color: aliceblue;
+  }
+}
+.price-sec {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  small {
+    font-weight: 700;
+    color: white;
+    font-size: 16px;
+  }
+}

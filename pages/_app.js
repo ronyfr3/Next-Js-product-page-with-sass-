@@ -1,7 +1,17 @@
-import '../styles/globals.css'
+import Header from "../component/Header";
+import "../styles/globals.scss";
+import Head from "next/head";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({ Component, pageProps }) => {
+  return (
+    <>
+      <Head>
+        <title>Fr3 Next App</title>
+      </Head>
+      <Header />
+      <Component {...pageProps} />
+    </>
+  );
+};
 
-export default MyApp
+export default MyApp;
